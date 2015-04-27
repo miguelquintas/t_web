@@ -8,6 +8,8 @@
   <meta name="description" content="Tinkler">
   <meta name="author" content="Tinkler">
 
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="jquery.slides.min.js"></script>
   <!--[if lt IE 9]>
@@ -43,7 +45,7 @@
   $(function(){
     $("#slides").slidesjs({
       width: 100,
-      height: 200,
+      height: 210,
       play: {
         active: true,
           // [boolean] Generate the play and stop buttons.
@@ -71,7 +73,7 @@ body{
 	width: 100%;
 	height: 100%;
 	background: #00CEBA;
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+  font-family: 'Lato', sans-serif; 
 }
 
 .logo{
@@ -89,10 +91,11 @@ body{
   margin-top: 200px;
   color: #fff;
   position: absolute;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 27px;
   letter-spacing: 1.5px;
   text-align: justify;
+  font-weight: 450;
 }
 
 .textResizedWidth{
@@ -103,26 +106,35 @@ body{
   margin-right: 50px;
   color: #fff;
   position: absolute;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 27px;
   letter-spacing: 1.5px;
   text-align: justify;
+  font-weight: 450;
   display: none;
 }
 
-.slogan{
-  text-align: center;
+.name{
+  text-align: right;
   color: #FE0B27;
-  font-size: 22px;
+}
+
+.slogan{
+  text-align: right;
+  color: #FE0B27;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .phone{
   width: 512px;
-  height: 647px;
+  height: 640px;
   margin-top: 40px;
   float: left;
   position: relative;
   background: url("img/iphone-bck.png");
+  background-size: 512px 640px;
+  background-repeat: no-repeat;
   z-index: 100;
 }
 
@@ -131,10 +143,10 @@ body{
 }
 
 #slides {
-  width: 277px;
-  height: 460px;
-  margin-left: 19px;
-  margin-top: 78px;
+  width: 267px;
+  height: 495px;
+  margin-left: 22px;
+  margin-top: 75px;
   display:none;
   z-index: 10;
 }
@@ -143,7 +155,7 @@ body{
 <body>
   
   <div class="logo">
-    <img src="img/logo_tinkler.png" width="357"><br /><br />
+    <div class="name"><img src="img/logo_tinkler.png" width="357"></div>
     <div class="slogan">Communicate through everything!</div>
   </div>
   
@@ -157,14 +169,21 @@ body{
     </div>
   </div>
   
-  <div class="textFullWidth">
-    Lorem ipsum dolor sit amet, soluta torquatos ex sea, quod elit eripuit vix in. Adhuc abhorreant disputationi quo ut. Per an stet platonem appellantur, ad iriure meliore denique vix, in est sint omnes. Ei eam regione vulputate, amet iriure corrumpit in ius, noluisse hendrerit vis ea. Quidam concludaturque in nam. Alia dolores torquatos pri an.
+  <div class="textFullWidth"> 
+    <p>Tinkler is a new way for you to let people reach you, without having to share your personal information with the world.</p>
+    <p>Tinklers are objects tagged with our QR code allowing people to connect with you, easily, and with context:</p>
 
-Soluta albucius rationibus mel in, probo ludus et pro. Alia volumus sea ad, cu dictas audiam appetere eos, ullum menandri disputationi at nam. Ex posse tincidunt eos. Error facilisi praesent eu duo, modo aeque ei nec. An debitis feugait laboramus per, ea mea viris eirmod maiestatis, ea sea brute harum soleat.
-
-Ius offendit inciderint ad, duo ad facete abhorreant. Eam homero quidam impetus ea, per te idque facete. Erant possit aliquid vim id. Case nostrum incorrupte te duo.
-
-Vix meis paulo ei. Fugit aperiri ius te, recteque posidonium theophrastus te pri. Velit commodo abhorreant cu usu, timeam tamquam in per. Te ponderum evertitur comprehensam est, maiorum vituperata sea ne. 
+    pets - "I've found your dog"
+    <br />
+    bags or suitcases - "I've got your suitcase"
+    <br />
+    vehicles - "Your lights are on"
+    <br />
+    mailboxes - "You've got mail!"
+    <br /><br />
+    and just about anything else you can think of! 
+    <br />
+    Feel free to reach us for new thoughts and ideas through admin@tinkler.it
 
     <br /><br />
 
@@ -172,13 +191,20 @@ Vix meis paulo ei. Fugit aperiri ius te, recteque posidonium theophrastus te pri
   </div>
 
   <div class="textResizedWidth">
-    Lorem ipsum dolor sit amet, soluta torquatos ex sea, quod elit eripuit vix in. Adhuc abhorreant disputationi quo ut. Per an stet platonem appellantur, ad iriure meliore denique vix, in est sint omnes. Ei eam regione vulputate, amet iriure corrumpit in ius, noluisse hendrerit vis ea. Quidam concludaturque in nam. Alia dolores torquatos pri an.
+    <p>Tinkler is a new way for you to let people reach you, without having to share your personal information with the world.</p>
+    <p>Tinklers are objects tagged with our QR code allowing people to connect with you, easily, and with context:</p>
 
-Soluta albucius rationibus mel in, probo ludus et pro. Alia volumus sea ad, cu dictas audiam appetere eos, ullum menandri disputationi at nam. Ex posse tincidunt eos. Error facilisi praesent eu duo, modo aeque ei nec. An debitis feugait laboramus per, ea mea viris eirmod maiestatis, ea sea brute harum soleat.
-
-Ius offendit inciderint ad, duo ad facete abhorreant. Eam homero quidam impetus ea, per te idque facete. Erant possit aliquid vim id. Case nostrum incorrupte te duo.
-
-Vix meis paulo ei. Fugit aperiri ius te, recteque posidonium theophrastus te pri. Velit commodo abhorreant cu usu, timeam tamquam in per. Te ponderum evertitur comprehensam est, maiorum vituperata sea ne. 
+    pets - "I've found your dog"
+    <br />
+    bags or suitcases - "I've got your suitcase"
+    <br />
+    vehicles - "Your lights are on"
+    <br />
+    mailboxes - "You've got mail!"
+    <br /><br />
+    and just about anything else you can think of! 
+    <br />
+    Feel free to reach us for new thoughts and ideas through admin@tinkler.it
 
     <br /><br />
 
