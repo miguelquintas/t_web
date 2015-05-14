@@ -41,9 +41,18 @@
     if (width < 900){
       $(".textFullWidth").hide("fast");
       $(".textResizedWidth").show("fast");
-    } else {
+      document.body.style.width = '100%';
+      document.getElementById("textFullWidth").style.width = "";
+    } else if(width<1440){
       $(".textFullWidth").show("fast");
       $(".textResizedWidth").hide("fast");
+      document.body.style.width = '100%';
+      document.getElementById("textFullWidth").style.width = "";
+    }else{
+      $(".textFullWidth").show("fast");
+      $(".textResizedWidth").hide("fast");
+      document.body.style.width = '1440px';
+      document.getElementById("textFullWidth").style.width = "800px";
     }
   };
 
@@ -83,7 +92,6 @@ html{
 }
 
 body{
-	width: 1440px;
 	height: 100%;
 	background: #00CEBA;
   font-family: 'Lato', sans-serif; 
@@ -184,7 +192,7 @@ body{
     </div>
   </div>
   
-  <div class="textFullWidth"> 
+  <div id="textFullWidth" class="textFullWidth"> 
     <p>Tinkler is a new way for you to let people reach you, without having to share your personal information with the world.</p>
     <p>Tinklers are objects tagged with our QR code allowing people to connect with you, easily, and with context:</p>
 
@@ -202,7 +210,8 @@ body{
 
     <br /><br />
 
-    <img src="img/app_store.png">&nbsp;&nbsp;<img class="disabledButton" src="img/play_store.png">
+    <a href="https://itunes.apple.com/pt/app/tinkler-it/id990018734?l=en&mt=8"><img src="img/app_store.png"></a>&nbsp;&nbsp;
+    <img class="disabledButton" src="img/play_store.png">
   </div>
 
   <div class="textResizedWidth">
@@ -223,7 +232,8 @@ body{
 
     <br /><br />
 
-    <img src="img/app_store.png">&nbsp;&nbsp;<img class="disabledButton" src="img/play_store.png">
+    <a href="https://itunes.apple.com/pt/app/tinkler-it/id990018734?l=en&mt=8"><img src="img/app_store.png"></a>&nbsp;&nbsp;
+    <img class="disabledButton" src="img/play_store.png">
   </div>
 </body>
 </html>
